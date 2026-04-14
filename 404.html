@@ -6,25 +6,25 @@
     <script type="text/javascript">
         // Single Page Apps for GitHub Pages
         // https://github.com/rafrex/spa-github-pages
-        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-        // ----------------------------------------------------------------------
-        // This script takes the current url and converts the path and query
-        // string into just a query string, and then redirects the browser
-        // to the new url with only a query string and hash fragment,
-        // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-        // http://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-        // Note: this logic assumes the app is deployed to a subpath.
-        var pathSegmentsToKeep = 1;
-
+        // This script is placed in 404.html to redirect all 404's to index.html
+        // with the path as a query param.
+        var segmentCount = 1; // Number of segments in the repository name (e.g. 1 for "LogisticsWebApp")
+        
         var l = window.location;
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-            l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+        var pathname = l.pathname;
+        var search = l.search;
+        var hash = l.hash;
 
+        var pathSegments = pathname.split('/');
+        var repoNameSegment = pathSegments.slice(0, segmentCount + 1).join('/');
+        var appPath = pathSegments.slice(segmentCount + 1).join('/');
+
+        // Construct redirection URL
+        // From: /LogisticsWebApp/some/path?q=v#h
+        // To:   /LogisticsWebApp/index.html?p=/some/path&q=v#h
+        var redirectUrl = repoNameSegment + '/index.html?p=/' + encodeURIComponent(appPath) + search.replace(/^\?/, '&') + hash;
+        
+        l.replace(redirectUrl);
     </script>
 </head>
 <body>

@@ -5,19 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logistics Sharing App</title>
-    <base href="/LogisticsWebApp/" />
+    <base href="/" />
     <script type="text/javascript">
-        // SPA Redirect Handler
-        (function(l) {
-            if (l.search[1] === '/' ) {
-                var decoded = l.search.slice(1).split('&').map(function(s) { 
-                    return s.replace(/~and~/g, '&') 
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
+        // Start Single Page Apps for GitHub Pages
+        (function() {
+            var p = new URLSearchParams(window.location.search).get('p');
+            if (p !== null) {
+                window.history.replaceState(null, null, 
+                    window.location.pathname.replace(/\/?index.html$/, '') + p + window.location.hash
                 );
             }
-        }(window.location))
+        }());
+        // End Single Page Apps for GitHub Pages
     </script>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
