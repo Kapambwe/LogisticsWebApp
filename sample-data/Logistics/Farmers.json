@@ -1,0 +1,17 @@
+[
+  { "Name": "Mwansa Family Farm", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Chikankata Smallholder Cooperative", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Kafue Commercial Farm", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Ibrahim Commercial Farms", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Niger Delta Farmers Cooperative", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Sunshine Agro Farms", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Rift Valley Farmers Cooperative", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "Mombasa Export Farm", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "Kilimanjaro Coffee Farm", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "Southern Highlands Cooperative", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "Murewa Tobacco Farm", "CountryCode": "ZW", "Country": "Zimbabwe" },
+  { "Name": "Matabeleland Cattle Cooperative", "CountryCode": "ZW", "Country": "Zimbabwe" },
+  { "Name": "Shire Valley Smallholders", "CountryCode": "MW", "Country": "Malawi" },
+  { "Name": "Northern Region Cocoa Cooperative", "CountryCode": "GH", "Country": "Ghana" },
+  { "Name": "Oromia Coffee Farmers Union", "CountryCode": "ET", "Country": "Ethiopia" }
+]

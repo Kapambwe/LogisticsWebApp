@@ -1,0 +1,15 @@
+[
+  { "Name": "AgriEquip Zambia Ltd", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "GreenTech Farm Solutions", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "FarmMachinery Co. Zambia", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Tractor & Equipment Nigeria Ltd", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "GreenAfrica Equipment", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "AgroPower Kenya", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "FarmTech Solutions East Africa", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "Tanzania Farm Equipment Co.", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "MechAgri Holdings", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "ZimFarm Equipment Ltd", "CountryCode": "ZW", "Country": "Zimbabwe" },
+  { "Name": "Malawi Farm Machinery", "CountryCode": "MW", "Country": "Malawi" },
+  { "Name": "Ghana Agro Machines Ltd", "CountryCode": "GH", "Country": "Ghana" },
+  { "Name": "EthioFarm Machinery", "CountryCode": "ET", "Country": "Ethiopia" }
+]
