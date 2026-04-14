@@ -2,29 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Logistics Sharing App</title>
+    <title>Redirecting...</title>
     <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // https://github.com/rafrex/spa-github-pages
-        // This script is placed in 404.html to redirect all 404's to index.html
-        // with the path as a query param.
-        var segmentCount = 1; // Number of segments in the repository name (e.g. 1 for "LogisticsWebApp")
-        
-        var l = window.location;
-        var pathname = l.pathname;
-        var search = l.search;
-        var hash = l.hash;
-
-        var pathSegments = pathname.split('/');
-        var repoNameSegment = pathSegments.slice(0, segmentCount + 1).join('/');
-        var appPath = pathSegments.slice(segmentCount + 1).join('/');
-
-        // Construct redirection URL
-        // From: /LogisticsWebApp/some/path?q=v#h
-        // To:   /LogisticsWebApp/index.html?p=/some/path&q=v#h
-        var redirectUrl = repoNameSegment + '/index.html?p=/' + encodeURIComponent(appPath) + search.replace(/^\?/, '&') + hash;
-        
-        l.replace(redirectUrl);
+      // Redirect all 404 routes to index.html and preserve path/query
+        var redirectTo = '/LogisticsWebApp/index.html' + location.search + location.hash;
+        var path = location.pathname.replace('/LogisticsWebApp', '');
+      if (path && path !== '/index.html') {
+        redirectTo += (location.search ? '&' : '?') + 'path=' + encodeURIComponent(path);
+      }
+      window.location.replace(redirectTo);
     </script>
 </head>
 <body>

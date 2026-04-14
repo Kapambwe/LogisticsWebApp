@@ -1,28 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logistics Sharing App</title>
-    <base href="/" />
-    <script type="text/javascript">
-        // Start Single Page Apps for GitHub Pages
-        (function() {
-            var p = new URLSearchParams(window.location.search).get('p');
-            if (p !== null) {
-                window.history.replaceState(null, null, 
-                    window.location.pathname.replace(/\/?index.html$/, '') + p + window.location.hash
-                );
-            }
-        }());
-        // End Single Page Apps for GitHub Pages
-    </script>
+    <base href="/LogisticsWebApp/" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/material-base.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="CompanyApp.Clients.LogisticsApp.styles.css" rel="stylesheet" />
-    <link href="_content/Radzen.Blazor/css/material-base.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,10 +25,20 @@
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
+        <span class="dismiss">ðŸ—™</span>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <script>
+        // If redirected from 404.html, restore path
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const path = params.get('path');
+            if (path) {
+                window.history.replaceState(null, '', '/LogisticsWebApp' + decodeURIComponent(path));
+            }
+        })();
+    </script>
 </body>
 
 </html>
