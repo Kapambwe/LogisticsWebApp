@@ -1,0 +1,17 @@
+[
+  { "Name": "Ministry of Agriculture - Zambia", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Agricultural Development Authority", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Farm Equipment Subsidy Program", "CountryCode": "ZM", "Country": "Zambia" },
+  { "Name": "Ministry of Agriculture - Nigeria", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Agricultural Development Corporation", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Farm Mechanization Agency", "CountryCode": "NG", "Country": "Nigeria" },
+  { "Name": "Ministry of Agriculture - Kenya", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "Kenya Agricultural Research Institute", "CountryCode": "KE", "Country": "Kenya" },
+  { "Name": "Ministry of Agriculture - Tanzania", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "National Agriculture Extension Services", "CountryCode": "TZ", "Country": "Tanzania" },
+  { "Name": "Ministry of Agriculture - Zimbabwe", "CountryCode": "ZW", "Country": "Zimbabwe" },
+  { "Name": "Agricultural Marketing Authority", "CountryCode": "ZW", "Country": "Zimbabwe" },
+  { "Name": "Ministry of Agriculture - Malawi", "CountryCode": "MW", "Country": "Malawi" },
+  { "Name": "Ministry of Food & Agriculture - Ghana", "CountryCode": "GH", "Country": "Ghana" },
+  { "Name": "Ministry of Agriculture - Ethiopia", "CountryCode": "ET", "Country": "Ethiopia" }
+]
